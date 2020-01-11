@@ -81,6 +81,12 @@ $ cd keyboard/handler
 ```
 $ go build -o keyhandler.exe *.go
 ```
+> 如果想在windows下编译linux可执行程序，在命令行设置临时环境变量后，再进行编译
+```
+$ set GOARCH=386 # 64位->amd64, 32位-> 386
+$ set GOOS=linux
+$ go env # 查看是否生效
+```
 
 ##### 3. 参数
 ```
