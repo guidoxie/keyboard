@@ -61,7 +61,7 @@ $ cd keyboard/listener
 
 ##### 2. 编译程序
 ```
-$ go build -ldflags "-s -w -H windowsgui" -o keylistener.exe *.go
+$ go build -ldflags "-s -w -H windowsgui" -o keylistener.exe .
 ```
 
 ##### 3. 可选，使用upx压缩程序（据说能起到一定加壳作用）
@@ -79,7 +79,7 @@ $ cd keyboard/handler
 
 ##### 2. 编译程序
 ```
-$ go build -o keyhandler.exe *.go
+$ go build -o keyhandler.exe .
 ```
 > 如果想在windows下编译linux可执行程序，在命令行设置临时环境变量后，再进行编译
 ```
