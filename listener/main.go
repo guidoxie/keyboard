@@ -2,7 +2,7 @@ package main
 
 import (
 	"flag"
-	"github.com/duanhunyiye/keyboard/listener/win32"
+	"github.com/guidoxie/keyboard/listener/win32"
 )
 
 // 默认配置
